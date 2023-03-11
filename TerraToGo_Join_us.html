@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TeraToGo</title>
+    <style>
+      body {
+        background-image: url("https://i.imgur.com/DGF6trh.png");
+        background-size: cover;
+      }
+      .logo {
+        display: block;
+        margin: 20px auto;
+        max-width: 70px;
+      }
+      .header {
+        text-align: center;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+	.button_b {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0000FF;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+      .image-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .image {
+        max-width: 1000px;
+        margin-bottom: 20px;
+      }
+      .text {
+        text-align: center;
+      }
+  	      form {
+        margin: 0 auto;
+        max-width: 200px;
+        text-align: left;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="https://i.imgur.com/DwOb7YT.png" alt="Logo" class="logo">
+      </div>
+      <div class="button-container">
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Home.html" class="button">Home</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Participants.html" class="button">Participating Restaurants & Drop-Off Bins</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MakeReturn_v2.html" class="button">Make a Return</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MyImpact.html#" class="button">Check Your Impact</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Join_us.html" class="button_b">Become a Restaurant Affilliate</a>
+      </div>
+    </div>
+    <div class="text">
+	<H2 style="font-family:tahoma;color:black;font-size:25px;">Wanna help your customers eat their way to a heathier planet? <br>Join us!</H2>
+    </div>
+    <form action="submit-form.php" method="POST">
+      <label for="name">Business Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required><br>
+
+      <label for="state">State:</label>
+      <fieldset>
+			<select id="state" name="state"><option value="---">---</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
+   </fieldset>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>

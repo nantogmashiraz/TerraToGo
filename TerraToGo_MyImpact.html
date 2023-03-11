@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TeraToGo</title>
+    <style>
+      body {
+        background-image: url("https://i.imgur.com/DGF6trh.png");
+        background-size: cover;
+      }
+      .logo {
+        display: block;
+        margin: 20px auto;
+        max-width: 70px;
+      }
+      .header {
+        text-align: center;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+	.button_b {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0000FF;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+      .image {
+        max-width: 400px;
+        margin-bottom: 20px;
+      }
+	.position {
+        position: absolute;
+        top: 65%;
+        left: 0px;
+        transform: translate(0, -50%);
+      }
+      .text {
+        text-align: center;
+      }
+      .image-text-container {
+        display: inline-block;
+        margin: 0 180px;
+      }
+      .form {
+        position: absolute;
+        top: 290px;
+        right: 50px;
+	  background-color: #4CAF50;
+      }
+
+     form {
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      border-radius: 5px;
+      }
+
+    label {
+     display: inline-block;
+     width: 100px;
+     font-size: 16px;
+     font-weight: bold;
+     margin-bottom: 10px;
+      }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #0000FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="https://i.imgur.com/DwOb7YT.png" alt="Logo" class="logo">
+      </div>
+      <div class="button-container">
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Home.html" class="button">Home</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Participants.html" class="button">Participating Restaurants & Drop-Off Bins</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MakeReturn_v2.html" class="button">Make a Return</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MyImpact.html" class="button_b">Check Your Impact</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Join_us.html" class="button">Become a Restaurant Affilliate</a>
+      </div>
+    </div>
+    <div class="text">
+      <H3 style="font-family:Sans serif;color:green;font-size:30px;">Did you know...? </H3>
+    </div>
+    <div class="text">
+      <p style="font-family:Sans serif;color:blue;font-size:20px;">1. More than 14 million TONS of plastic end <br>up in our oceans every year <p style="font-family:Sans serif;color:blue;font-size:20px;">2.This makes up 80% of all marine debris found <br>from surface waters and deep-sea sediments<p style="font-family:Sans serif;color:blue;font-size:20px;">3. Compostable packaging actually has a greater <br>emissions impact than other types of single-use containers </p>
+    </div>
+    <div class="text">
+      <H2 align="justify-center" style="font-family:Sans serif;color:blue;font-size:30px;"> The best alternative is reuse. Enter your <br>details to see how much impact you've had <br>using TerraToGo  </H2>
+    </div>
+    <div class="image position">
+        <img src="https://i.imgur.com/InodT9l.png" alt="image" class="image">
+    </div>
+    <div class="form">
+     <form action="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Stats.html">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name"><br><br>
+       <label for="phone">Phone Number:</label>
+       <input type="text" id="phone" name="phone"><br><br>
+       <input type="submit" value="Submit">
+     </form>
+</div>	
+  </body>
+</html>

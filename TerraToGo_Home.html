@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraToGo</title>
+    <script>
+      // Set a constant number to multiply with
+      const constantNumber = 160000;
+
+      // Create a timer that starts when the page loads
+      let seconds = 0;
+      setInterval(function() {
+        seconds++;
+        // Multiply the constant number by the number of seconds and display the result
+        document.getElementById("result").innerHTML = "Single-use plastic produced worldwide since <br>you opened this webpage: " + constantNumber * seconds + "lbs";
+        // Update the timer display
+        document.getElementById("timer").innerHTML = seconds;
+      }, 1000);
+     </script>
+    <style>
+      body {
+        background-image: url("https://i.imgur.com/DGF6trh.png");
+        background-size: cover;
+      }
+      .logo {
+        display: block;
+        margin: 20px auto;
+        max-width: 70px;
+      }
+      .header {
+        text-align: center;
+      }
+      .button-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+	.button_b {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #0000FF;
+        color: white;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+      .image-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .image {
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+      .text {
+        text-align: center;
+	  position:static;
+	  padding: 0px 0px;
+      }
+	.text1 {
+        text-align: right;
+	  padding: 0px 0px;
+	  position:static;
+      }
+      .image-text-container {
+        display: inline-block;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="https://i.imgur.com/DwOb7YT.png" alt="Logo" class="logo">
+      </div>
+      <div class="button-container">
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Home.html" class="button_b">Home</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Participants.html" class="button">Participating Restaurants & Drop-Off Bins</a>
+        <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MakeReturn_v2.html" class="button">Make a Return</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_MyImpact.html#" class="button">Check Your Impact</a>
+	  <a href="file:///C:/Users/afrop/Desktop/TerraToGo/TerraToGo_Join_us.html" class="button">Become a Restaurant Affilliate</a>
+      </div>
+    <div class="text">
+      <H3 style="font-family:algerian;color:green;font-size:30px;">How it Works</H3>
+    </div>
+    <div class="text1">
+      <H3 id="result" style="font-family:arial;color:yellow;font-size:20px;">Single-use plastic produced<br> worldwide since you opened this webpage: 0</H3>
+    </div>
+    <div class="image-container">
+      <div class="image-text-container">
+	  <img src="https://i.imgur.com/Thab4u2.png" alt="Image 2" class="image">
+        <div class="text">
+          <p style="font-family:arial;color:white;font-size:20px;">Get takeout from a participating restaurant</p>
+        </div>
+      </div>
+      <div class="image-text-container">
+        <img src="https://i.imgur.com/5BApfCX.png" alt="Image 2" class="image">
+        <div class="text">
+          <p style="font-family:arial;color:white;font-size:20px;">Order gets delivered in environmentally <br>friendly packaging</p>
+        </div>
+      </div>
+      <div class="image-text-container">
+        <img src="https://i.imgur.com/T0sYwNi.png" class="image">
+        <div class="text">
+          <p style="font-family:arial;color:white;font-size:20px;">Return container after use to the<br> nearest TerraToGo bin and look out for your free coupons</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
